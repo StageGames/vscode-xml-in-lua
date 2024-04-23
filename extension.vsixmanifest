@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+	<Metadata>
+		<Identity Language="en-US" Id="xml-in-lua" Version="1.0.0" Publisher="StageGames"/>
+		<DisplayName>xml-in-lua</DisplayName>
+		<Description>Apply XML syntax highlighting inside multi-line Lua strings</Description>
+		<Categories>Programming Languages</Categories>
+		<GalleryFlags>Public</GalleryFlags>
+		<Properties>
+			<Property Id="Microsoft.VisualStudio.Code.Engine" Value="^1.15.0" />
+		</Properties>
+		<Icon>extension/icon.png</Icon>
+	</Metadata>
+	<Installation>
+		<InstallationTarget Id="Microsoft.VisualStudio.Code"/>
+	</Installation>
+	<Dependencies/>
+	<Assets>
+		<Asset Type="Microsoft.VisualStudio.Code.Manifest" Path="extension/package.json" Addressable="true" />
+		<Asset Type="Microsoft.VisualStudio.Services.Icons.Default" Path="extension/icon.png" Addressable="true" />
+	</Assets>
+</PackageManifest>

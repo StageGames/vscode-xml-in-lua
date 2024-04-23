@@ -1,0 +1,15 @@
+{
+	"fileTypes": [ "lua" ],
+	"injectionSelector": "L:source.lua -string",
+	"scopeName": "xml-in-lua",
+	"patterns": [
+		{
+			"begin": "\\[(=*)\\[",
+			"beginCaptures": { "0": { "name": "string.quoted.other.multiline.lua" } },
+			"end": "\\]\\1\\][ \\t]*",
+			"endCaptures": { "0": { "name": "string.quoted.other.multiline.lua" } },
+			"name": "string.quoted.other.multiline.lua",
+			"patterns": [ { "include": "text.xml" } ]
+		}
+	]
+}

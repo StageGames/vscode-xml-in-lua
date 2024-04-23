@@ -1,0 +1,22 @@
+{
+	"name": "xml-in-lua",
+	"description": "Apply XML syntax highlighting inside multi-line Lua strings",
+	"version": "1.0.0",
+	"publisher": "StageGames",
+	"__metadata": {
+		"publisherDisplayName": "Stage Games"
+	},
+	"icon": "icon.png",
+	"engines": {
+		"vscode": "^1.15.0"
+	},
+	"contributes": {
+		"grammars": [
+			{
+				"injectTo": [ "source.lua" ],
+				"scopeName": "xml-in-lua",
+				"path": "./xml-in-lua.json"
+			}
+		]
+	}
+}
